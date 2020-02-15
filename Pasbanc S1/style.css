@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+body {
+    font-family: "Livvic";
+}
+
+/*garo, genos & saitama*/
+header {
+    /*the property of overflow hideen should not be removed */
+    /*it ensures that the entire header covers the entire width*/
+    overflow: hidden;
+    /*this is the background color for the navbar*/
+    background-color: #720b98;
+    padding-bottom: 25px;
+    /*the header has a bottom border to give room for  the prosperity eternal*/
+    border-bottom: yellow 2px solid;
+}
+
+/*the logo is the one with id of topmost*/
+/*this floats the logo to the left*/
+header #topmost {
+    float: left;
+}
+
+/*this is the logo as a link*/
+header #topmost a {
+    text-decoration: none;
+    /*the position of absolute allows the logo to be positioned*/
+    position: absolute;
+    font-size: 30px;
+    top: 12px;
+    left: 35px;
+}
+
+.big-logo {
+    font-family: 'Condiment', cursive;
+}
+
+/*this is the first part of logo  pas*/
+.firstbig-logo {
+    color: #0f0;
+}
+/*this is the second pat of the logo banc*/
+.secondbig-logo {
+    color:gold;
+}
+
+/*this styling for prosperity eternal*/
+#downMost {
+    position: absolute;
+    top: 40px;
+    left: 33px;
+    font-family: ikarius ADF Std;
+    font-size: 15px;
+    color:#fff;
+}
+
+/*these  are the other five links*/
+.topnav a {
+    float: right;
+    color: #0f0;
+    text-align: center;
+    padding: 25px 25px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 0.12em;
+    font-weight: 400;
+
+}
+
+/*this is for the golden line that appears under the link on hovering*/
+.topnav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    /*this is what allows the line to show up*/
+    position: absolute;
+    /*dont remove it*/
+    background: gold;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    /*this allows  a smooth transition as one moves from one link to another*/
+    width: 0;
+}
+
+/*the golden button appears on hovering*/
+.topnav a:hover:after {
+    width: 90%;
+    left: 0;
+}
+
+.topnav .icon {
+    /*the font awesome icon cant be seen at maximum width*/
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+    /*this is what ensures that @ 700px only the font awesome icon shows*/
+    .topnav a:not(:last-child) {
+        display: none;
+    }
+
+    /*this font awesome icon is on the right*/
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    header #topmost a {
+        font-size: 30px;
+        top: 15px;
+    }
+
+    header #downMost a {
+        top: 25px;
+        left: 20px;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    .topnav.responsive a {
+        /*removes the float property such that they line down down*/
+        float: none;
+        /*this is what allows the links to show up on min. screen*/
+        display: block;
+        /*dont remove */
+        text-align: center;
+    }
+
+    .topnav a:after {
+        display: none;
+    }
+
+    .topnav a:hover {
+        color: gold;
+        font-weight: 600;
+    }
+}
+
+/*this consists of the text and the image in the upper part of landing page*/
+#header-content {
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    /*this allows the content to be displayed downwards and not sideways*/
+    flex-direction: column;
+    /*the content is on the left and not spread out across the screen including the button*/
+    align-items: flex-start;
+    /*this allows the content to be placed right in the centre and not upwards*/
+    justify-content: center;
+    height: 100vh;
+    /*allows the text to be at a distance from the edge*/
+    padding: 20px;
+    font-size: 50px;
+    background-image: url("pb-imgs/macOS-Wallpapers-06 .jpg");
+    min-height: 100%;
+    /*this remaining properties are for the parrallax image behind the text*/
+    /*this allows the center part of the image to be viwed in all sizes*/
+    background-position: center;
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#header-content h1 {
+    /*this gives a reasonable distance between the text and the button*/
+    margin-bottom: 50px;
+}
+
+
+/*this is the styling for the call to action btn*/
+#header-content button {
+    background-color: #0f0;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    padding: 11px 34px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+    #header-content {
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+/*styling for feature boxes*/
+.card {
+    text-align: center;
+    /*distance of text from all sides*/
+    padding: 60px 25px;
+    background-color: #fff;
+    border: 2px solid #0f0;
+    /*this specifies the height of the boxes*/
+    height: 350px;
+
+}
+
+/*styling for titles i feature boxes*/
+.card h2 {
+    padding: 5px 0px;
+
+}
+
+/*hover effecton feature boxes to show links*/
+
+.feature_box :hover {
+    opacity: 1;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+/*this is styling for what shows up on hovering*/
+.inner-card {
+    opacity: 0;
+    /*it must have a position of absolute*/
+    position: absolute;
+    /*this allow it to cover the entire width of the feature box*/
+    top: 0;
+    left: 0;
+    /*this centers the links inside the conatiner*/
+    padding: 80px 0px;
+    /*two properties below allow the links to completely cover the original text*/
+    height: 100%;
+    width: 100%;
+}
+
+.inner-card ul {
+    list-style: none;
+    color: indigo;
+    line-height: 40px;
+}
+
+/*this is styling for the links on hovering*/
+.inner-card ul a {
+    /*black text color*/
+    color: #000;
+    padding-right:35px;
+}
+
+/*container for the the five feature boxes*/
+.feature_container {
+    background-color: #800080;
+    /*this allows the boxes distance from the fooeter at the bottom and the image at the top*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*this is the container for about us*/
+.feature_content {
+	/*this is to distance the content from the  footer at the bottom*/
+    padding-bottom: 100px;
+    line-height: 35px;
+    border-top: gold 2px solid;
+
+}
+
+.whypasbanc {
+    background-color: indigo;
+    color: #fff;
+    /*space betwwen the content and conatiner */
+    padding: 20px;
+
+}
+/*each of the two side by side conatiners contains a link*/
+.whypasbanc a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.story {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.story a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+/**footer*/
+footer {
+    background-color: rgb(0, 0, 45);
+    /*distance of the footer from the feature conatiner*/
+    margin-top: -100px;
+    padding-top: 50px;
+
+}
+/*title tags for each group links*/
+footer h5 {
+    color: #fff;
+}
+/*footer links*/
+footer a {
+    color: #ddd;
+}
+/*footer links on hovering*/
+footer a:hover {
+    color: #0f0;
+    text-decoration: none;
+
+}

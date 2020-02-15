@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <!--these meta tags are important they enable  the content occupy device width-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!--this bootrap min is the the one that allows the modals and the css boxes for the features to work-->
+    <!--mess with it at your ow risk..the feature boxes and modals in the feature boxes and the footer will not work-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--this font awesome cdn is the the one that allows the icons in the footer to work-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Condiment|Tangerine:700&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <!--this is the link to the customised css for this particular page-->
+    <link rel="stylesheet" href="style.css">
+    <title>@Pasbanc</title>
+</head>
+
+<body>
+    <!--the body of the document starts here-->
+    <header class="sticky-top">
+        <!--my thoughts are the logo will go here-->
+        <div class="container-logo">
+            <div id="topmost">
+                <h1 class="big-logo"><a href="index.html"><span class="firstbig-logo">pas</span><span class="secondbig-logo">banc</span></a></h1>
+            </div>
+            <div id="downMost">Prosperity Eternal</div>
+        </div>
+        <!-- This is the navbar of our document -->
+        <nav class="topnav" id="myTopnav">
+            <!--it has a class of sticky top such that when one scrolls it remains on the document-->
+            <!--the id of myTopnav is the one that ensures it becomes a span at max-width 600px ..this is the script tag at the bottom of the page-->
+            <!--the links are arrenged in such an order but htey appear opposite way on the screen ..so it is best you leave them like that-->
+            <!--my thoughts are the logo will go here-->
+            <a href="pb-html/supply1.html">Supply</a>
+            <!-- each link is connected to another so the linking works fine-->
+            <a href="pb-html/invest1.html">Invest</a>
+            <a href="pb-html/save1.html">Save</a>
+            <a href="pb-html/learn1.html">Learn</a>
+            <a href="pb-html/plan1.html">Plan</a>
+            <!--this anchor tag represents the span on minimising to 600px ,it works though better programming solutions can be substituted-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!--without href=javascript:void(0); the span will not work ..so be careful-->
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <!--this is the font awesome icon for the the span thing-->
+            </a>
+        </nav><!-- my navbar has concluded-->
+    </header>
+    <!--image header-->
+    <!--this begins the heade rpart where u see the purpose of pasbanc and the image-->
+    <div id="header-content">
+        <h1>The best way to create <br> and manage wealth</h1>
+        <!--the br tag is to ensure the statement covers more than one line even in max -width-->
+        <!--call to action btn-->
+        <button clas="btn">Get Started</button>
+    </div>
+    <!--this marks the end of the element with the purpose of pasbanc in it-->
+    <!--this container below contains our five feature boxes-->
+
+
+
+
+    <div class="feature_container">
+        <!--two column section-->
+        <!--the two columns are plan and learn and will always be dont change that-->
+        <!--bootsrap has been used to style their size-->
+        <div class="container-fluid two-columns">
+            <div class="row m-5">
+                <!--the m-5 ensures that their is individual two boxes remain in their container and occupy their respective width be stable in that particular order and precision -->
+                <!--my advice is that please dont mess with them- unless you know what you are doing-->
+                <div id="plan" class="col-lg-5 col-sm-12 col-md-5 m-4 feature_box card">
+                    <!--the m-4 class ensure that their is an equal width on both sides of the box -->
+                    <!--if it is removed the box will shift to the left leaving alot of space to the right and it wont be in line with the other boxes-->
+                    <!--h2 tag is the title for the featue boxes-->
+                    <h2>Plan</h2>
+                    <!--the content for the plan box goes here-->
+                    <!--the content that is seen before hovering on the box-->
+                    <!--the one seen on hovering you just have to scroll a liitle bit lower-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid excepturi vero voluptates fuga doloremque, rem labore quo consectetur, asperiores natus voluptate quaerat possimus dignissimos, blanditiis nam. Laboriosam facilis, nobis dolorum?</p>
+                    <!--the content seen before hovering ends here-->
+                    <!--the inner card contains the content seen on hovering-->
+                    <div class="inner-card">
+                        <!--the content is display in list form on hovering -->
+                        <ul>
+                            <!--these are the links which you click on to get a botsrap modal appear ont he screen-->
+                            <!--the content has not been placed under the respective links because the inner card has a position of absolute and bootsrap modals cant appear in such case so i placed the content just outside each box but withon the conatiners -->
+                            <!--please dont try to bring them in ,it wont work-->
+
+
+                            <!--this is the first modal link in the plan box -->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">To do list</a></li>
+                            <!--the first modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the plan box-->
+                            <!--just after the end tag of the plan div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink2" href="#planLink2">To do list</a></li>
+
+                            <!--the second modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the plan box-->
+                            <!--just after the end tag of the plan div box-->
+                            <!--take note-->
+
+                            <li><a data-toggle="modal" data-target="#planLink3" href="#planLink3">To do list</a></li>
+                            <!--the last modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the plan box-->
+                            <!--just after the end tag of the plan div box-->
+                            <!--take note-->
+
+
+                        </ul><!--end tag of the unorderd list seen on hovering-->
+                    </div><!--end of the div of class of inner card-->
+                </div><!--div of plan box ends here-->
+
+
+
+                <!-- Modal boxes for   for plan links start here -->
+                <!--these links have just been placed under the plan div box for them to work-->
+                <div class="modal" id="planLink1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas unde nihil sapiente libero laboriosam architecto dolorem dolorum corrupti laudantium nesciunt maiores dolor quia, fuga delectus alias aspernatur vitae voluptatum excepturi.<br><br>
+                                <!--the paragraph have break tags to enable some of the text appear on the next line-->
+                                <!--so they can be removed according to preference of text-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt quam voluptate magnam blanditiis facilis nulla, sapiente eaque ducimus ipsum quis corporis dolor laudantium nam magni suscipit delectus soluta quod.</p>
+                                <!--at the bottom of this modal box is a link to another page possibly-->
+                                <a href="#">CLICK HERE FOR MORE</a>
+                            </div><!--this is the end tag of the element containing the modal boxes-->
+                            <!--remember the modal boxes are the ones that appear when you click on alink that shows up whwn you hover-->
+
+                        </div><!--end of div class modal content-->
+
+                    </div><!--this is the end of the div modal box diagonally centered-->
+
+                </div><!--end of div and class of plankink1-->
+                
+                <!--more div boxes for the other links go here -->
+                <!--remember the href of the link and the id of the modal must match-->
+                <!--place modal boxes for the other tags here-->
+                <!--end of plan modal links-->
+
+
+
+
+
+                <div id="learn" class="col-lg-5 col-sm-12 col-md-5 offset-md-1 m-4  feature_box card">
+                  <!--the learn box starts here-->
+                  <!--the m-4 class ensure that their is an equal width on both sides of the box -->
+                    <!--if it is removed the box will shift to the left leaving alot of space to the right and it wont be in line with the other boxes-->
+                    <!--h2 tag is the title for the featue boxes-->
+                    <h2>Learn</h2>
+                      <!--the content for the learn box goes here-->
+                    <!--the content that is seen before hovering on the box goes here-->
+                    <!--the one seen on hovering you just have to scroll a liitle bit lower-->
+                      <!--the content seen before hovering ends here-->
+                    <!--the inner card contains the content seen on hovering-->
+                    <div class="inner-card">
+                      <!--the inner-card is what shows up on hovering on the learning box-->
+                        <ul>
+                           <!--these are the links which you click on to get a botsrap modal appear ont he screen-->
+                            <!--the content has not been placed under the respective links because the inner card has a position of absolute and bootsrap modals cant appear in such case so i placed the content just outside each box but withon the conatiners -->
+                            <!--please dont try to bring them in ,it wont work-->
+
+
+                            <!--this is the first modal link in the learn box -->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the first modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the second modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the third modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the last modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                        </ul><!--end tag of the unorderd list seen on hovering-->
+                    </div><!--end of the div of class of inner card-->
+                </div><!--div of learn box ends here-->
+                <!-- Modal boxes for   for learn links start here -->
+                <!--these links have just been placed under the learn div box for them to work-->
+                <!-- Modal boxes for   learn links  have been placed just outside the div of id of learn-->
+                 <!--these are for learning,the show   a modal bootsrap on clicking on one of the links -->
+                <div class="modal" id="planLink1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                              <!--the modal body contains information that is seen when you click on a link-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas unde nihil sapiente libero laboriosam architecto dolorem dolorum corrupti laudantium nesciunt maiores dolor quia, fuga delectus alias aspernatur vitae voluptatum excepturi.<br><br>
+                                <!--the paragraph have break tags to enable some of the text appear on the next line-->
+                                <!--so they can be removed according to preference of text-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt quam voluptate magnam blanditiis facilis nulla, sapiente eaque ducimus ipsum quis corporis dolor laudantium nam magni suscipit delectus soluta quod.</p>
+                                <!--at the bottom of this modal box is a link to another page possibly-->
+
+                                <a href="pb-html/learn1.html">CLICK HERE FOR MORE</a>
+                            </div><!--this is the end tag of the class modal body -->
+                            <!--remember the modal boxes are the ones that appear when you click on alink that shows up whwn you hover-->
+                        </div><!--end of div class modal content-->
+                    </div><!--this is the end of the div modal box diagonally centered-->
+                </div><!--end of div and class of learnlink1-->
+                <!--more div boxes for the other links go here -->
+                <!--remember the href of the link and the id of the modal must match-->
+                <!--place modal boxes for the other tags here-->
+                <!--end of learn modal links
+                the end of thelearning modal boxes-->
+            </div><!--end of the row of class m-5 for the two containers-->
+        </div><!--end of the conatiner for the two columns-->
+        <!--these must not be played with-->
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--threecolumn section-->
+        <!--the three columns are ivest and save and supply will always be dont change that-->
+        <!--bootsrap has been used to style their size-->
+
+
+
+
+        <!--three column.e invest save supply-->
+        <div class="container-fluid padding">
+            <div class="row text-center padding m-5">
+                 <!--the m-5 ensures that their is individual two boxes remain in their container and occupy their respective width be stable in that particular order and precision -->
+                <!--my advice is that please dont mess with them- unless you know what you are doing-->
+
+                <div id="invest" class="col-xs-12 col-sm-12 col-md-5 col-lg-3 m-4 feature_box card">
+                    <!--the m-4 class ensure that their is an equal width on both sides of the box -->
+                    <!--if it is removed the box will shift to the left leaving alot of space to the right and it wont be in line with the other boxes-->
+                    <!--h2 tag is the title for the feature boxes-->
+                    <h2> Invest</h2>
+                     <!--the content for the invest box goes here-->
+                    <!--the content that is seen before hovering on the box goes here-->
+                    <!--the one seen on hovering you just have to scroll a liitle bit lower-->
+                      <!--the content seen before hovering ends here-->
+                    <!--the inner card contains the content seen on hovering-->
+
+                    <div class="inner-card">
+                      <!--the inner-card is what shows up on hovering on the learning box-->
+
+                        <ul>
+                          <!--these are the links which you click on to get a botsrap modal appear ont he screen-->
+                            <!--the content has not been placed under the respective links because the inner card has a position of absolute and bootsrap modals cant appear in such case so i placed the content just outside each box but within the containers -->
+                            <!--please dont try to bring them in ,it wont work-->
+
+                            <!--this is the first modal link in the learn box -->
+
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the first modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li><!--the second modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the third  modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the last modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the learn box-->
+                            <!--just after the end tag of the learn div box-->
+                            <!--take note-->
+                        </ul><!--end tag of the unorderd list seen on hovering-->
+                    </div><!--end of the div of class of inner card-->
+                   </div><!--end of invest div box-->
+
+
+                   <!-- Modal boxes for   for invest links start here -->
+                <!--these links have just been placed under the invest div box for them to work-->
+                <!-- Modal boxes for   invest links  have been placed just outside the div of id of invest-->
+                 <!--these are for investing,the show   a modal bootsrap on clicking on one of the links -->
+
+                    <div class="modal" id="planLink1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                           <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <!--the modal body contains information that is seen when you click on a link-->
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas unde nihil sapiente libero laboriosam architecto dolorem dolorum corrupti laudantium nesciunt maiores dolor quia, fuga delectus alias aspernatur vitae voluptatum excepturi.<br><br>
+                                     <!--the paragraph have break tags to enable some of the text appear on the next line-->
+                                    <!--so they can be removed according to preference of text-->
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt quam voluptate magnam blanditiis facilis nulla, sapiente eaque ducimus ipsum quis corporis dolor laudantium nam magni suscipit delectus soluta quod.</p>
+                                    <!--at the bottom of this modal box is a link to another page possibly-->
+                                    <a href="#">CLICK HERE FOR MORE</a>
+                                </div><!--this is the end tag of the class modal body -->
+                                <!--remember the modal boxes are the ones that appear when you click on alink that shows up whwn you hover-->
+                            </div><!--end of div class modal content-->
+                        </div><!--this is the end of the div modal box diagonally centered-->
+                    </div><!--end of div and class of investlink1-->
+                <!--more div boxes for the other links go here -->
+                <!--remember the href of the link and the id of the modal must match-->
+                <!--place modal boxes for the other tags here-->
+                <!--end of invest modal links-->
+                    <!--end of invest modal links
+                  the end of the investing modal boxes-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--saving box starts here...links come at the end-->
+                <div id="save" class="col-xs-12 col-sm-12 col-md-5 col-lg-3 m-4 feature_box card">
+                  <!--the m-4 class ensure that their is an equal width on both sides of the box -->
+                    <!--if it is removed the box will shift to the left leaving alot of space to the right and it wont be in line with the other boxes-->
+                    <!--h2 tag is the title for the feature boxes-->
+
+                    <h2> Save</h2>
+                     <!--the content for the save box goes here-->
+                    <!--the content that is seen before hovering on the box goes here-->
+                    <!--the one seen on hovering you just have to scroll a liitle bit lower-->
+                      <!--the content seen before hovering ends here-->
+                    <!--the inner card contains the content seen on hovering-->
+
+                    <div class="inner-card">
+                      <!--the inner-card is what shows up on hovering on the saviing box-->
+
+                        <ul>
+                          <!--these are the links which you click on to get a botsrap modal appear on  the screen-->
+                            <!--the content has not been placed under the respective links because the inner card has a position of absolute and bootsrap modals cant appear in such case so i placed the content just outside each box but within the containers -->
+                            <!--please dont try to bring them in ,it wont work-->
+
+
+                            <!--this is the first modal link in the save box -->
+
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+
+
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the second modal link ends here-->
+
+
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the save box-->
+                            <!--just after the end tag of the save div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the third modal link ends here-->
+
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the save box-->
+                            <!--just after the end tag of the save div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+                            <!--the last modal link ends here-->
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the save box-->
+                            <!--just after the end tag of the save div box-->
+                            <!--take note-->
+
+
+                        </ul><!--end tag of the unorderd list seen on hovering-->
+                    </div><!--end of the div of class of inner card-->
+                </div><!--end of save div box-->
+
+
+
+                   <!-- Modal boxes for   for save links start here -->
+                <!--these links have just been placed under the save div box for them to work-->
+                <!-- Modal boxes for   save links  have been placed just outside the div of id of save-->
+                 <!--these are for saving,the show   a modal bootsrap on clicking on one of the links -->
+              
+                <div class="modal" id="planLink1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                   <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                              <!--the modal body contains information that is seen when you click on a link-->
+
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas unde nihil sapiente libero laboriosam architecto dolorem dolorum corrupti laudantium nesciunt maiores dolor quia, fuga delectus alias aspernatur vitae voluptatum excepturi.<br><br>
+                                <!--the paragraph have break tags to enable some of the text appear on the next line-->
+                                    <!--so they can be removed according to preference of text-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt quam voluptate magnam blanditiis facilis nulla, sapiente eaque ducimus ipsum quis corporis dolor laudantium nam magni suscipit delectus soluta quod.</p>
+                                <!--at the bottom of this modal box is a link to another page possibly-->
+                                <a href="#">CLICK HERE FOR MORE</a>
+                            </div><!--this is the end tag of the class modal body -->
+                                <!--remember the modal boxes are the ones that appear when you click on alink that shows up whwn you hover-->
+                        </div><!--end of div class modal content-->
+                    </div><!--this is the end of the div modal box diagonally centered-->
+                </div><!--end of div and class of savelink1-->
+                <!--more div boxes for the other links go here -->
+                <!--remember the href of the link and the id of the modal must match-->
+                <!--place modal boxes for the other tags here-->
+                <!--end of save modal links-->
+                    <!--end of save modal links
+                  the end of the savinging modal boxes-->
+                <!--end of save modal links the end of the saving modal boxes-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--supply feature box starts here-->
+                <div id="supply" class="col-xs-12 col-sm-12 col-md-5 col-lg-3 m-4 feature_box card">
+
+                  <!--the m-4 class ensure that their is an equal width on both sides of the box -->
+                    <!--if it is removed the box will shift to the left leaving alot of space to the right and it wont be in line with the other boxes-->
+                    <!--h2 tag is the title for the feature boxes-->
+
+                    <h2>Supply</h2>
+                     <!--the content for the save box goes here-->
+                    <!--the content that is seen before hovering on the box goes here-->
+                    <!--the one seen on hovering you just have to scroll a liitle bit lower-->
+                      <!--the content seen before hovering ends here-->
+                    <!--the inner card contains the content seen on hovering-->
+
+                    <div class="inner-card">
+
+                       <!--the inner-card is what shows up on hovering on the saviing box-->
+
+                        <ul>
+                          <!--these are the links which you click on to get a botsrap modal appear on  the screen-->
+                            <!--the content has not been placed under the respective links because the inner card has a position of absolute and bootsrap modals cant appear in such case so i placed the content just outside each box but within the containers -->
+                            <!--please dont try to bring them in ,it wont work-->
+
+
+                            <!--this is the first modal link in the supply box -->
+
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+
+                            <!--the first modal link ends here-->
+
+
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the supply box-->
+                            <!--just after the end tag of the supply div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+
+                            <!--the second modal link ends here-->
+
+
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the supply box-->
+                            <!--just after the end tag of the supply div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+
+                            <!--the third modal link ends here-->
+
+
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the supply box-->
+                            <!--just after the end tag of the supply div box-->
+                            <!--take note-->
+                            <li><a data-toggle="modal" data-target="#planLink1" href="#planLink1">Blogs and articles</a></li>
+
+                            <!--the last modal link ends here-->
+
+
+                            <!--the target link is very important it is linked to the id of the modal -->
+                            <!--is the id of the modal id and the href dont match the content wont show-->
+                            <!--its content like explained above is just outside the supply box-->
+                            <!--just after the end tag of the supply div box-->
+                            <!--take note-->
+                        </ul><!--end tag of the unorderd list seen on hovering-->
+
+                    </div><!--end of the div of class of inner card-->
+                </div><!--end of supply box-->
+
+
+                 <!-- Modal boxes for   for supply links start here -->
+                <!--these links have just been placed under the supply div box for them to work-->
+                <!-- Modal boxes for   supply links  have been placed just outside the div of id of supply-->
+                 <!--these are for supplying,the show   a modal bootsrap on clicking on one of the links -->
+                
+                <div class="modal" id="planLink1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                         <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <!--the modal body contains information that is seen when you click on a link-->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas unde nihil sapiente libero laboriosam architecto dolorem dolorum corrupti laudantium nesciunt maiores dolor quia, fuga delectus alias aspernatur vitae voluptatum excepturi.<br><br>
+                                 <!--the paragraph have break tags to enable some of the text appear on the next line-->
+                                    <!--so they can be removed according to preference of text-->
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt quam voluptate magnam blanditiis facilis nulla, sapiente eaque ducimus ipsum quis corporis dolor laudantium nam magni suscipit delectus soluta quod.</p>
+                                 <!--at the bottom of this modal box is a link to another page possibly-->                            
+                                <a href="#">CLICK HERE FOR MORE</a>
+                            </div><!--this is the end tag of the class modal body -->
+                                <!--remember the modal boxes are the ones that appear when you click on alink that shows up whwn you hover-->
+                        </div><!--end of div class modal content-->
+                    </div><!--this is the end of the div modal box diagonally centered-->
+                </div><!--end of div and class of supplylink1-->
+                <!--more div boxes for the other links go here -->
+                <!--remember the href of the link and the id of the modal must match-->
+                <!--place modal boxes for the other tags here-->
+                <!--end of supply modal links-->
+                    <!--end of supply modal links
+                  the end of the supplying modal boxes-->
+                <!--end of supply modal links the end of the supply modal boxes-->
+                <!--end of supply modal links
+              the end of the supply modal boxes-->
+            </div><!--end of the row of class m-5 for the three containers-->
+        </div><!--end of the container for the three columns-->
+        <!--these must not be played with-->
+
+        <!--end of the three columns-->
+
+
+
+
+    </div> <!--end of five feature boxes .plan,save,learn,invest..-->
+<!--the div containing all five feature boxes end here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--two column  side by side section-->
+    <!--this two columns explain what pasbanc is about-->
+    <div class="feature_content">
+        <div class="container-fluid">
+          <!--this class of fluid enables these two containers each to cover 50% of screen width and should not be disturebed-->
+            <div class="row">
+              <!--this row is a bootsrap class for the two containers-->
+
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 whypasbanc"><!--this is the div that occupies half of the sccreen width-->
+
+
+                    <h2>Why Pasbanc</h2>
+                    <!--h2 tag is the first heading-->
+
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, laudantium, molestias. Expedita alias tempora ex minima est, aliquam ut rem autem officia at vero in iure repudiandae culpa maxime ipsum.</p>
+                    <!--end of first paragph of why pasbanc-->
+
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil soluta iusto, placeat numquam quod earum facere animi magnam, ad aliquid sunt, voluptate vel iste tenetur in a quaerat beatae!</p>
+                    <!--end of second paragraph of why pasbanc-->
+
+
+                    <!--more why pasbanc content can be added here-->
+
+
+                    <!--this is a link to another page for more information-->
+                    <a href="pb-html/aboutus1.html">Learn More 
+
+                      <!--this is a font awesome icon-->
+                      <!--it can be replaced with an animated version-->
+                      <i class="fa fa-angle-right"></i>
+                    </a><!--end of icon anchor tag-->
+
+                </div><!--end of whypasbanc div-->
+
+
+
+                <div class="col-lg-6 col-md-6 col-sm-6 story">
+                  <!--this is the div that occupies half of the sccreen width-->
+                    <h2>About us</h2>
+                     <!--h2 tag is the first heading-->
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, laudantium, molestias. Expedita alias tempora ex minima est, aliquam ut rem autem officia at vero in iure repudiandae culpa maxime ipsum.</p>
+                     <!--end of first paragph of why pasbanc-->
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptas praesentium architecto iusto? Numquam, rem est nihil sequi eius quasi rerum, mollitia quo delectus laborum </p>
+                     <!--end of second paragraph of  story-->
+                    <!--more story content can be added here-->
+
+                    <!--this is a link to another page for more information-->
+                    <a href="pb-html/aboutus1.html">Learn More 
+
+
+                       <!--this is a font awesome icon-->
+                      <!--it can be replaced with an animated version-->
+                      <i class="fa fa-angle-right"></i>
+                    </a><!--end of icon anchor tag-->
+
+                </div><!--end of story div-->
+            </div><!--end of div of row class-->
+        </div><!--end of div container -fluid-->
+    </div><!--end of div feature content-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--the footer starts here-->
+    <!--Footer -->
+    <footer>
+        <div class="container-fluid">
+            <!--this class of container fluid enables the four containers to be spaced out evenly in the footer-->
+            <div class="row text-center">
+                <!--this text center keeps the content in the four bootsrap containers to be placed at the center of each container-->
+                <div class="col-md-3 Pasbanc">
+                    <!--this conatiner occupies a a quarter of the footer width-->
+                    <hr class="light">
+                    <!--horizontal line above the title for the pasbanc conatiner-->
+
+                    <h5>Pasbanc</h5>
+                    <!--title for the pasbanc container-->
+
+                    <hr class="light">
+                     <!--horizontal line below the title for the pasbanc conatiner-->
+
+                    <!-- Button trigger modal -->
+                    <!--the list elements are also links to other info-->
+                    <p><a data-toggle="modal" href="#features">Features</a></p>
+                    <!--in this case the links dont have any positioning of absolute -->
+                    <!--therefore the content for the links is just below  the links-->
+                    <!--the href of the anchor tag must be the sam e as the id of the modal-->
+
+                    <!-- Modal -->
+                    <!--a modal box appears o clicking on the links-->
+                    <div class="modal" id="features" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                             <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                      <!--the modal body contains information that is seen when you click on a link-->
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, possimus fugiat, quis provident adipisci incidunt placeat modi veritatis commodi, obcaecati repellat saepe. Amet vitae earum cum incidunt tenetur quia eligendi.
+                                </div><!--end of div class modal body-->
+                                
+                            </div><!--end of div modal content-->
+                        </div><!--end of div diagonally centerd-->
+                    </div><!--end features modal-->
+
+
+
+                    <!--aboutus footer link starts here-->
+                    <p><a data-toggle="modal" href="#aboutus">About us</a></p>
+
+                    <!-- Modal for about us link -->
+                     <!--a modal box appears o clicking on the links-->
+                    <div class="modal" id="aboutus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                             <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                            <div class="modal-content">
+                                
+                                <div class="modal-body">
+                                     <!--the modal body contains information that is seen when you click on a link-->
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut reprehenderit, quia cumque eius voluptates. Eius maiores, doloremque vel soluta id neque atque adipisci beatae, similique, debitis at perferendis est.
+                                </div><!--end of div class modal body-->
+                                
+                            </div><!--end of div modal content-->
+                        </div><!--end of div diagonally centerd-->
+                    </div><!--end aboutus modal-->
+
+
+                    <!--modal link for good phos starts here-->
+                    <p><a data-toggle="modal" href="#exampleModalLong">Good phos</a></p>
+                    <!-- Modal  for good phos-->
+                    <div class="modal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                            <div class="modal-content">
+                                <!--the modal body contains information that is seen when you click on a link-->
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut reprehenderit, quia cumque eius voluptates. Eius maiores, doloremque vel soluta id neque atque adipisci beatae, similique, debitis at perferendis est.
+                                </div><!--end of div class modal body-->
+                               
+                            </div><!--end of div modal content-->
+                        </div><!--end of div diagonally centerd-->
+                    </div><!--end goodphos modal-->
+
+
+                    <!--link for frequently asked question starts here-->
+                    <p><a data-toggle="modal" href="#faqs">FAQS</a></p><!--the id of the modal box must match the href of the link-->
+                    <!-- Modal  forFAQS-->
+                    <div class="modal" id="faqs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                               <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                    <!--the modal body contains information that is seen when you click on a link-->
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut reprehenderit, quia cumque eius voluptates. Eius maiores, doloremque vel soluta id neque atque adipisci beatae, similique, debitis at perferendis est.
+                                </div><!--end of div class modal body-->
+                                
+                            </div><!--end of div modal content-->
+                        </div><!--end of div diagonally centerd-->
+                    </div><!--end faqs modal-->
+
+
+
+                    <!--link for testimonies starts here-->
+                    <p><a data-toggle="modal" href="#testimonies">Testimonies</a></p>
+                    <!--the id of the modal box must match the href of the link-->
+                    <!-- Modal  for testimonies-->
+                    <!-- Modal -->
+                    <div class="modal" id="testimonies" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                             <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                      <!--the modal body contains information that is seen when you click on a link-->
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut reprehenderit, quia cumque eius voluptates. Eius maiores, doloremque vel soluta id neque atque adipisci beatae, similique, debitis at perferendis est.
+                                </div><!--end of div class modal body-->
+                                
+                            </div><!--end of div modal content-->
+                        </div><!--end of div diagonally centerd-->
+                    </div><!--end testimonies modal-->
+
+                          <!--link for media starts here-->
+                    <p><a data-toggle="modal" href="#media">Media</a></p>
+                      <!--the id of the modal box must match the href of the link-->
+                    <!-- Modal  for media-->
+                    <!-- Modal -->
+                    <div class="modal" id="media" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                              <!--the modal boxes are diagonally centered to enable the boxes to appear in the center of the screen width-->
+                            <div class="modal-content">
+                              
+                                <div class="modal-body">
+                                      <!--the modal body contains information that is seen when you click on a link-->
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aut reprehenderit, quia cumque eius voluptates. Eius maiores, doloremque vel soluta id neque atque adipisci beatae, similique, debitis at perferendis est.
+                                </div><!--end of div class modal body-->
+                               
+                            </div><!--end of div modal content-->
+                        </div><!--end of div diagonally centerd-->
+                    </div><!--end of media modal-->
+                </div><!--end of pasbanc container-->
+
+
+
+                    <!--product conatiner starts here-->
+
+                <div class="col-md-3 Products">
+                <!--this conatiner occupies a a quarter of the footer width-->
+
+                    <hr class="light">
+                     <!--horizontal line above the title for the pasbanc conatiner-->
+
+                    <h5>Products</h5>
+                    <!--title for the products container-->
+              
+                    <hr class="light">
+                     <!--horizontal line below the title for the product conatiner--> 
+
+                     <!--links for products container-->
+                    <p><a href="#">Security</a></p>
+                    <p><a href="#">Terms</a></p>
+                    <p><a href="#">Privacy</a></p>
+                    <p><a href="#">Legal</a></p>
+                    <!--end of links for products container-->
+
+
+                </div><!--end of products container-->
+
+
+
+                    <!--conatct conatiner starts here-->                
+
+                <div class="col-md-3 Contact">
+                <!--this conatiner occupies a a quarter of the footer width-->
+                    <hr class="light">
+                     <!--horizontal line above the title for the conatact conatiner-->
+
+                    <h5>Contact</h5>
+                   <!--title for the contact container-->
+
+                    <hr class="light">
+                     <!--horizontal line below the title for the contact conatiner-->
+
+
+                     <!--links for contact container-->
+
+                    <p><a href="#">
+                            <i class="fas fa-home mr-3"></i>Uganda Makerere</a></p>
+                    <p><a href="#">
+                            <i class="fas fa-envelope mr-3"></i> pasbanc@gmail.com</a></p>
+                    <p><a href="#">
+                            <i class="fas fa-phone mr-3"></i> +256875835</a></p>
+                 <!--end of links for contacts container-->
+
+                </div><!--end of contacts conatiner-->
+
+
+
+
+                <!--follow us container starts here-->
+                <div class="col-md-3">
+   <!--this conatiner occupies a a quarter of the footer width-->
+                    <hr class="light">
+  <!--horizontal line above the title for the folow us conatiner-->
+                    <h5>Follow us</h5>
+     <!--title for the contact container-->
+                    <hr class="light">
+    <!--horizontal line below the title for the follow us conatiner-->
+
+ <!--links for folow us container-->
+                    <p>
+                        <!-- Facebook -->
+                        <a class="fb-ic" href="#">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a></p>
+                    <p>
+                        <!-- Twitter -->
+                        <a class="tw-ic" href="#">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                    </p>
+                    <p>
+                        <!-- Google +-->
+                        <a class="gplus-ic" href="#">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                    </p>
+                    <p>
+                        <a class="li-ic" href="#">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                    </p>
+                <!--end of links for follow us container-->
+
+                </div><!--end of follow us conatiner-->
+
+                <div class="col-12">
+                    <!--this occupies 100% width-->
+                    <hr class="light">
+                    <h5>&copy; COPYRIGHT</h5>
+                </div><!--this is the end of the copyright div-->
+            </div><!--end of div row text center-->
+        </div><!--end of footer container fluid-->
+    </footer><!--footer end here-->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!--by optional i mean i placed it by myslef ..not that it can be left out-->
+    <!--this is js code that allows the span icon to lower and release nav links when clicking on it at max width of 600px-->
+    <script>
+    function myFunction() {
+     
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        //var logo = document.getElementById("topmost");
+        //var smallLogo = document.getElementById("downMost");
+       
+    }
+    </script><!--end of optional js-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!--the error below will apear if the script is removed-->
+    <!--Bootstrap's JavaScript requires jQuery. jQuery must be included before Bootstrap's JavaScript.-->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!--end of bootsrap js script-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

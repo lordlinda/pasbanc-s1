@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+body{
+	font-family:"Livvic";
+}
+
+header {
+    /*the property of overflow hideen should not be removed */
+    /*it ensures that the entire header covers the entire width*/
+    overflow: hidden;
+    /*this is the background color for the navbar*/
+    background-color: #720b98;
+    padding-bottom: 25px;
+    /*the header has a bottom border to give room for  the prosperity eternal*/
+    border-bottom: yellow 2px solid;
+}
+header #topmost a {
+    text-decoration: none;
+    /*the position of absolute allows the logo to be positioned*/
+    position: absolute;
+    font-size: 30px;
+    top: 12px;
+    left: 35px;
+}
+
+.big-logo {
+    font-family: 'Condiment', cursive;
+}
+
+/*this is the first part of logo  pas*/
+.firstbig-logo {
+    color: #0f0;
+}
+/*this is the second pat of the logo banc*/
+.secondbig-logo {
+    color:gold;
+}
+
+/*this styling for prosperity eternal*/
+#downMost {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-family: ikarius ADF Std;
+    font-size: 15px;
+    color:#fff;
+}
+
+.topnav a {
+  float: right;
+  color: #0f0;
+  text-align: center;
+  padding: 25px 25px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.12em;
+  font-weight:400;
+
+}
+.topnav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    /*this is what allows the line to show up*/
+    position: absolute;
+    /*dont remove it*/
+    background: gold;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    /*this allows  a smooth transition as one moves from one link to another*/
+    width: 0;
+}
+
+/*the golden button appears on hovering*/
+.topnav a:hover:after {
+    width: 90%;
+    left: 0;
+}
+
+.topnav .icon {
+    /*the font awesome icon cant be seen at maximum width*/
+    display: none;
+}
+
+/*the header content begins here*/
+.header-content {
+	display: flex;
+	 /*this allows the content to be displayed downwards and not sideways*/
+
+	flex-direction: column;
+/*the content is on the left and not spread out across the screen including the button*/
+
+	align-items: flex-start;
+ /*this allows the content to be placed right in the centre and not upwards*/
+
+	justify-content: center;
+	height: calc(100vh - 50px);
+	margin: auto;
+	padding: 20px;
+		/*the text is allowed to move to the right*/
+
+	text-align: right;
+	background-color: #eefbfb;
+}
+
+/*header paragraph*/
+
+.header-content p {
+	font-size: 24px;
+	line-height: 36px;
+	width: 60%;
+}
+
+.header-content button {
+	background-color: indigo;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 50px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.topnav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background:gold;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+/*the golden button appears on hovering*/
+.topnav a:hover:after {
+    width: 90%;
+    left: 0;
+}
+
+.topnav .icon {
+    /*the font awesome icon cant be seen at maximum width*/
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:last-child) {
+  	display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+    /*this is what ensures that @ 700px only the font awesome icon shows*/
+    .topnav a:not(:last-child) {
+        display: none;
+    }
+
+    /*this font awesome icon is on the right*/
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    header #topmost a {
+        font-size: 30px;
+        top: 15px;
+    }
+
+    header #downMost a {
+        top: 25px;
+        left: 20px;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    .topnav.responsive a {
+        /*removes the float property such that they line down down*/
+        float: none;
+        /*this is what allows the links to show up on min. screen*/
+        display: block;
+        /*dont remove */
+        text-align: center;
+    }
+
+    .topnav a:after {
+        display: none;
+    }
+
+    .topnav a:hover {
+        color: gold;
+        font-weight: 600;
+    }
+}
+
+/*the feature boxes  begin here*/
+ 			
+			.feature_container{
+			background-color:  #800080;
+			padding-top: 20px;
+			padding-bottom: 60px;
+		}
+ 		.feature_box{
+			text-align: center;
+			padding:20px;
+			height:400px;
+			background-color: #fff;
+            position:relative;
+			border-radius: 5px ;
+			border:2px solid #0f0;
+			}
+		/*this is the title at the top of the feature boxes*/
+         /*awaiting content*/	
+		#feature-title{
+		/**this enables the content to be in the centre which is key */
+	
+			align-items: center;
+		    text-align: center;
+		    color:#fff;
+		}
+    /*styling for feature boxes*/
+.card {
+    text-align: center;
+    /*distance of text from all sides*/
+    padding: 60px 25px;
+    background-color: #fff;
+    border: 2px solid #0f0;
+    /*this specifies the height of the boxes*/
+    height: 350px;
+
+}
+
+/*styling for titles i feature boxes*/
+.card h2 {
+    padding: 5px 0px;
+
+}
+
+/*hover effecton feature boxes to show links*/
+
+.feature_box :hover {
+    opacity: 1;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+/*this is styling for what shows up on hovering*/
+.inner-card {
+    opacity: 0;
+    /*it must have a position of absolute*/
+    position: absolute;
+    /*this allow it to cover the entire width of the feature box*/
+    top: 0;
+    left: 0;
+    /*this centers the links inside the conatiner*/
+    padding: 80px 0px;
+    /*two properties below allow the links to completely cover the original text*/
+    height: 100%;
+    width: 100%;
+}
+
+.inner-card ul {
+    list-style: none;
+    color: indigo;
+    line-height: 40px;
+}
+
+/*this is styling for the links on hovering*/
+.inner-card ul a {
+    /*black text color*/
+    color: #000;
+     /*it centers the links in the boxes*/
+   padding-right:35px;
+}
+		/*tool for pasbanc*/
+		.tool_box{
+			height:100vh;
+		    padding: 10px 100px;
+		}
+		.container-info{
+			text-align: center;
+			padding-top: 15px;
+			margin-top:65px;
+			box-shadow: 
+				0 10px 20px rgba(0,0,0,0.19), 
+				0 6px 6px rgba(0,0,0,0.23);
+				}
+       
+		
+		/*dropdown code*/
+		#dropdown {
+		 position: absolute;
+         right:19.4%;
+         display: inline-block;
+         min-width: 130px;
+         
+
+		}
+       select{
+			 background-color:#fff;
+			 border:1px solid #ccc;
+			 cursor: pointer;
+			 margin: auto;
+			 padding: 0.3rem 0.5rem;
+			 width: 70%;
+			 z-index: 1;
+		}
+		input{
+		 width: 70%;
+		
+		}
+		#container-ans{
+			padding :20px 20px;
+			color:#0f0;
+		}
+		
+			/**footer*/
+footer {
+    background-color: rgb(0, 0, 45);
+    /*distance of the footer from the feature conatiner*/
+    margin-top: -100px;
+    padding-top: 50px;
+
+}
+/*title tags for each group links*/
+footer h5 {
+    color: #fff;
+}
+/*footer links*/
+footer a {
+    color: #ddd;
+}
+/*footer links on hovering*/
+footer a:hover {
+    color: #0f0;
+    text-decoration: none;
+
+}
